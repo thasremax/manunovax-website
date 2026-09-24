@@ -1,20 +1,18 @@
 ManuNovaX Technologies Inc. — Website
 ========================================
-
-This package is a redone, lighter version of the ManuNovaX website.
+Redesigned with a dark navy/black background and lighter text for readability.
 
 Changes:
-- Much lighter white/light-blue background so the dark-blue logo is clearly visible.
-- Increased header height and constrained logo height so the logo is not cut off.
-- Updated navigation with Services, AI Solutions, About, Vision & Mission, Careers, Contact.
-- Detailed About section.
-- Vision and Mission sections.
-- Careers section with resume upload field.
-- Responsive design for desktop, tablet and mobile.
-- User-supplied ManuNovaX logo included.
+- User-supplied ManuNovaX logo is included and its dark lettering has been lightened for the dark background.
+- Header height and logo sizing adjusted so the top of the logo is not cut off.
+- Lighter navigation, headings, body text and cards while retaining a dark professional theme.
+- Careers tab opens an email to info@manunovax.ca.
+- Careers section includes resume fields; actual file receiving requires a form service/backend.
+- About, Vision & Mission, Services, AI Solutions and Contact sections retained.
 
-IMPORTANT:
-GitHub Pages is a static hosting service. The resume field is present, but it does NOT actually send/store resumes yet. To receive uploaded resumes, connect the form to a form-processing service or backend.
-
-GitHub upload:
-Upload/replace index.html, styles.css, script.js, manunovax-logo.png and README.txt in the existing repository. Do not upload the ZIP itself.
+Upload/replace:
+index.html
+styles.css
+script.js
+manunovax-logo.png
+README.txt
