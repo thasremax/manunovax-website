@@ -61,13 +61,13 @@ h1 .blue{color:var(--blue)}
 h2{font-size:36px;line-height:1.12;letter-spacing:-1.2px;margin:0 0 18px;color:#12365c}
 .section-sub{color:#5a7592;font-size:17px;max-width:760px;margin:0}
 
-.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
-.service-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:32px;min-height:150px;position:relative;overflow:hidden;box-shadow:0 8px 24px rgba(25,70,110,.05)}
+.service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+.service-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px;min-height:150px;position:relative;overflow:hidden;box-shadow:0 8px 24px rgba(25,70,110,.05)}
 .service-card.featured{grid-column:1 / -1;min-height:235px}
 .service-card:after{content:"";position:absolute;right:0;top:0;width:18px;height:18px;background:linear-gradient(45deg,transparent 50%,#cfe9fb 50%)}
 .badge{display:inline-block;background:#e6f3ff;color:var(--blue);padding:5px 10px;border-radius:4px;font-size:11px;font-weight:850;letter-spacing:.8px;text-transform:uppercase;margin-bottom:15px}
 .service-card h3{font-size:26px;line-height:1.15;margin:0 0 12px;color:#163b63}
-.service-card.small h3{font-size:18px}
+.service-card.small h3{font-size:18px;line-height:1.3}
 .service-card p{color:#5a7592;font-size:15px;line-height:1.65;margin:0}
 .learn{display:inline-block;margin-top:23px;color:var(--blue);font-size:13px;font-weight:850}
 .learn:after{content:"→";margin-left:8px}
@@ -105,14 +105,13 @@ h2{font-size:36px;line-height:1.12;letter-spacing:-1.2px;margin:0 0 18px;color:#
 .career-form-card textarea{min-height:115px;resize:vertical}
 .file-label{display:grid;gap:7px;color:#58738f;font-size:.9rem}
 .file-label input{padding:9px}
-.career-list{margin:22px 0 0;padding-left:21px;color:#4d6a86;line-height:2}
-.form-note{font-size:.78rem;color:#738ba2;margin:0}
-.privacy-note{font-size:.8rem;color:#738ba2}
 
 .cta{min-height:350px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;background:linear-gradient(135deg,#eaf5fd,#fff)}
 .cta h2{font-size:37px;margin:20px 0 30px}
 .cta p{color:#58738f;font-size:16px;margin:0 0 24px}
 .cta .fine{font-size:12px;color:#7890a7;margin-top:22px}
+.contact-phone{margin-top:16px;color:#42617e;font-weight:700}
+.contact-phone a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
 
 footer{background:#102a47;color:#fff;padding:55px 0 45px}
 .footer-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;gap:50px}
@@ -128,6 +127,7 @@ footer{background:#102a47;color:#fff;padding:55px 0 45px}
 
 @media(max-width:1000px){
   .navlinks{gap:14px;font-size:12px}
+  .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .nav-cta{display:none}
   .logo{height:82px}
   h1{font-size:52px}
@@ -139,7 +139,7 @@ footer{background:#102a47;color:#fff;padding:55px 0 45px}
   h1{font-size:46px}
   .stats-grid{grid-template-columns:repeat(2,1fr)}
   .stat{min-height:95px;border-bottom:1px solid #e3ebf3}
-  .service-grid,.steps,.about-grid,.careers-grid,.vision-grid{grid-template-columns:1fr}
+  .service-grid,.steps,.about-grid,.vision-grid{grid-template-columns:1fr}
   .service-card.featured{grid-column:auto}
   .step:not(:last-child):after{display:none}
   .footer-grid{grid-template-columns:1fr 1fr}
