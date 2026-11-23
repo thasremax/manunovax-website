@@ -1,5 +1,1 @@
-function careerEmailNotice(event){
-  event.preventDefault();
-  window.location.href = "mailto:info@manunovax.ca?subject=ManuNovaX%20Career%20Inquiry";
-  return false;
-}
+document.addEventListener("DOMContentLoaded",()=>{const nav=document.querySelector(".navlinks");if(!nav)return;const triggers=nav.querySelectorAll(".nav-trigger");triggers.forEach(trigger=>{trigger.addEventListener("click",event=>{if(window.matchMedia("(max-width: 650px)").matches){event.preventDefault();const item=trigger.closest(".has-dropdown");const open=item.classList.toggle("open");trigger.setAttribute("aria-expanded",String(open));}});});const after=nav.querySelector(":scope");if(window.matchMedia("(max-width: 650px)").matches){nav.addEventListener("click",event=>{if(event.target===nav){nav.classList.toggle("mobile-open");}});}window.addEventListener("resize",()=>{if(!window.matchMedia("(max-width: 650px)").matches){nav.classList.remove("mobile-open");nav.querySelectorAll(".has-dropdown").forEach(x=>x.classList.remove("open"));triggers.forEach(x=>x.setAttribute("aria-expanded","false"));}});});
