@@ -228,3 +228,54 @@ footer{background:#102a47;color:#fff;padding:55px 0 45px}
   .development-grid,.research-grid,.partnership-grid,.ip-grid{grid-template-columns:1fr}
   .partnership-cta{align-items:flex-start;flex-direction:column}
 }
+
+
+/* Modern navigation, service pages and refreshed visual identity */
+:root{--bg:#f5f3ee;--white:#fffefa;--panel:#fffefa;--panel2:#eeeee7;--line:#dcded5;--text:#182528;--muted:#667574;--blue:#16a69a;--blue2:#087d75}
+body{background:#f5f3ee;color:#182528}
+header{background:rgba(24,37,40,.97);border-bottom:1px solid rgba(255,255,255,.12);box-shadow:0 8px 28px rgba(13,28,29,.16)}
+.nav{gap:30px}.logo{height:84px}.navlinks{gap:26px;color:#f1f4ed;font-size:13px}
+.navlinks>a,.nav-trigger{padding:14px 0;display:inline-flex;align-items:center;gap:7px}
+.navlinks a:hover,.nav-trigger:hover{color:#77e0c9}
+.nav-item{position:relative}.chevron{font-size:17px;color:#77e0c9;line-height:1}
+.dropdown-menu{display:none;position:absolute;top:100%;left:-18px;min-width:260px;max-height:75vh;overflow:auto;padding:13px;background:#203336;border:1px solid rgba(255,255,255,.13);border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.28);z-index:50}
+.has-dropdown:hover .dropdown-menu,.has-dropdown:focus-within .dropdown-menu,.has-dropdown.open .dropdown-menu{display:grid}
+.dropdown-menu a{display:block;padding:9px 11px;border-radius:7px;color:#eaf2ed;font-size:12px;font-weight:650;white-space:normal}
+.dropdown-menu a:hover{background:rgba(119,224,201,.12);color:#8cf0d5}
+.dropdown-heading{padding:7px 11px 4px;color:#8ce1ce;font-size:10px;letter-spacing:1.3px;text-transform:uppercase;font-weight:850}
+.dropdown-divider{height:1px;background:rgba(255,255,255,.14);margin:8px 4px}
+.nav-cta{background:#16a69a;color:#102829}.nav-cta:hover{background:#77e0c9}
+.hero{background:radial-gradient(circle at 82% 35%,rgba(22,166,154,.18),transparent 34%),linear-gradient(135deg,#f5f3ee 0%,#e7eee8 100%)}
+.kicker{color:#078b81}.kicker:before{background:#16a69a}
+h1{color:#182e30}h1 .blue{color:#078b81}
+.btn-primary{background:#087f78;color:#fff}.btn-primary:hover{background:#075f5b}
+.btn-outline{border-color:#9eaea7;background:transparent;color:#203b3a}
+.stats{background:#fffefa}.stat strong{color:#078b81}
+.section{background:#f5f3ee}.light-section,.innovation-development-section,.join-section,.ip-section{background:#fffefa}
+h2{color:#1d3435}.section-sub{color:#627371}
+.service-card{background:linear-gradient(145deg,#20383a,#142729);border:1px solid #355455;box-shadow:0 12px 30px rgba(18,42,41,.13)}
+.service-card:after{background:linear-gradient(45deg,transparent 50%,#16a69a 50%)}
+.service-card p{color:#c5d7d0}.service-link{display:flex;flex-direction:column;color:#fff;cursor:pointer}
+.service-link:hover{border-color:#64d7c0}.service-learn{display:inline-block;margin-top:auto;padding-top:20px;color:#83e4ce;font-size:12px;font-weight:850}
+.innovation-section,.research-section,.partnership-section,.vision-section{background:#e9eee8}
+.development-card,.research-card,.partnership-card,.ip-card,.vision-card,.step{background:#fffefa;border-color:#d9ded5;box-shadow:0 10px 26px rgba(28,54,50,.06)}
+.research-card{border-top-color:#16a69a}
+.join-panel,.about-panel,.project-sidebar{background:#eff2ec;border-color:#d9ded5}
+.project-hero{background:radial-gradient(circle at 82% 35%,rgba(22,166,154,.16),transparent 34%),linear-gradient(135deg,#f5f3ee,#e7eee8)}
+.project-status{background:#e0f3ed;color:#08766e;border-color:#bce3d8}.status-dot{background:#16a69a}
+.project-number,.step-number,.development-index{color:#69bfb0}
+.project-note{border-left-color:#16a69a}
+.cta{background:linear-gradient(135deg,#dcece5,#f7f4ed)}
+footer{background:#172a2c}.footer-title,.domain{color:#7be0c8}
+@media(max-width:1000px){.navlinks{gap:16px;font-size:12px}}
+@media(max-width:850px){.nav{gap:16px}.navlinks{gap:12px}.logo{height:76px}}
+@media(max-width:650px){
+ .nav{justify-content:space-between}.navlinks{display:flex;margin-left:0;gap:0}
+ .navlinks>a:not(:last-child){display:none}
+ .nav-item{display:none}.navlinks:after{content:"Menu";display:inline-flex;padding:10px 14px;border:1px solid rgba(255,255,255,.25);border-radius:24px;color:#f4f5ef;font-size:12px;font-weight:800}
+ .navlinks.mobile-open{position:absolute;top:76px;left:0;right:0;display:grid;gap:0;padding:15px 22px;background:#203336}
+ .navlinks.mobile-open .nav-item,.navlinks.mobile-open>a{display:block}
+ .navlinks.mobile-open:after{display:none}
+ .navlinks.mobile-open .dropdown-menu{position:static;box-shadow:none;border:0;max-height:none;margin:4px 0 10px;background:#172a2c}
+ .navlinks.mobile-open .has-dropdown.open .dropdown-menu{display:grid}
+}
