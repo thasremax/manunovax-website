@@ -272,7 +272,7 @@ footer{background:#172a2c}.footer-title,.domain{color:#7be0c8}
 @media(max-width:650px){
  .nav{justify-content:space-between}.navlinks{display:flex;margin-left:0;gap:0}
  .navlinks>a:not(:last-child){display:none}
- .nav-item{display:none}.navlinks:after{content:"Menu";display:inline-flex;padding:10px 14px;border:1px solid rgba(255,255,255,.25);border-radius:24px;color:#f4f5ef;font-size:12px;font-weight:800}
+ .nav-item{display:none}.mobile-menu-toggle{display:inline-flex;align-items:center;padding:10px 14px;border:1px solid rgba(255,255,255,.25);border-radius:24px;background:transparent;color:#f4f5ef;font:inherit;font-size:12px;font-weight:800;cursor:pointer}
  .navlinks.mobile-open{position:absolute;top:76px;left:0;right:0;display:grid;gap:0;padding:15px 22px;background:#203336}
  .navlinks.mobile-open .nav-item,.navlinks.mobile-open>a{display:block}
  .navlinks.mobile-open .mobile-menu-toggle{margin-top:8px;justify-self:start}
